@@ -1,0 +1,158 @@
+//----------------------------------------------------------------------------//
+//Header
+
+.nav-logo {
+  display: inline-block;;
+  position: relative;
+  height: 68px;
+  width: 314px;
+  left: 50px;
+}
+
+header {
+  height: 75px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1.5vh;
+}
+
+.navigation {
+    display: inline-block;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+nav li {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+.navigation a {
+  color: black;
+  font-size: 20px;
+}
+
+
+
+//----------------------------------------------------------------------------//
+//Main
+.home-section-one-tabs {
+  height: 6vh;
+  text-align: center;
+  font-size: 3em;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  bottom: 10%;
+}
+
+.home-section-one-tabs .tab-one {
+  color: #F34C1C;
+  background-color: #F3F3F5;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.home-section-one-tabs .tab-two {
+  color: #FFFFFF;
+  background-color: #3BA3C3;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+.home-section-one {
+  height:80vh;
+  background-color: #3BA3C3;
+  color: white;
+  text-align: center;
+}
+
+.button-one {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #F34C1C;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #B44705;
+}
+
+.button-one:hover {background-color: #3e8e41}
+
+.button-one:hover {
+  background-color: #F34C1C;
+  box-shadow: 0 5px #B44705;
+  transform: translateY(4px);
+}
+
+.flexeforce-services li {
+  color: black;
+  display: inline-block;
+  font-size: 1.5em;
+  top: 700px;
+  text-align: center;
+
+}
+
+.home-section-two {
+  height: 10vh;
+  background-color: #37353a;
+  color: #B4BBC2;
+  text-align: center;
+}
+
+.home-section-two h1 {
+  font-size: 3em;
+}
+
+.home-section-two p {
+  font-size: 1.5em;
+}
+
+.home-selection-three {
+  background-color: #FFB736;
+  height:100vh;
+}
+
+.home-selection-four {
+  background-color: #4155B4;
+  height:100vh;
+}
+
+.home-selection-five {
+  background-color: #584297;
+  height:100vh;
+}
+
+.home-selection-six {
+  background-color: #FFFDFF;
+  height:100vh;
+}
+
+//----------------------------------------------------------------------------//
+//Footer
+
+footer {
+    // position: absolute;
+    background-color: #37353a;
+    color: #c0bdc4;
+    width: 100vw;
+    height: 100px;
+    bottom: 0px;
+    font-size: 1.5em;
+    font-weight: 300;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+}
+
+.footer-nav a {
+  position: relative;
+  line-height: 80px;
+  color: #c0bdc4;
+  text-decoration: none;
+}

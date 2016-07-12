@@ -1,0 +1,7 @@
+<h1>All Clients</h1>
+
+<% @clients.each do |client| %>
+  <ul>
+    <li><%= link_to client.business_name, client%></li>
+  </ul>
+<% end %>

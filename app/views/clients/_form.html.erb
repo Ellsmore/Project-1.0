@@ -1,0 +1,45 @@
+<%= form_for @client do |f| %>
+  <fieldset>
+    <%= f.label :business_name %>
+    <%= f.text_field :business_name, :required => true%>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :address%>
+    <%= f.text_field :address, :required => true%>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :suburb %>
+    <%= f.text_field :suburb, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :state %>
+    <%= f.text_field :state, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :postcode %>
+    <%= f.number_field :postcode, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :contact_name %>
+    <%= f.text_field :contact_name %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :mobile_number %>
+    <%= f.phone_field :mobile_number %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :phone_number %>
+    <%= f.phone_field :phone_number %>
+  </fieldset>
+
+
+  <%= f.submit %>
+
+<% end %>

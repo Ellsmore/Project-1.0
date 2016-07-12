@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexiforce</title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+        <header class="container-fluid row">
+            <div class="col-md-3">
+                <img src="http://www.flexiforce.com.au/wp-content/uploads/2013/02/large-logo1.jpg" class="nav-logo"/>
+            </div>
+
+            <div class="navigation col-md-9">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Candidates
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <%= link_to 'All Candidates', candidates_path %>
+                                        </li>
+                                    <li>
+                                      <%= link_to 'New Candidate', new_candidate_path %>
+                                    </li>
+                                  </ul>
+                                </li>
+                                  <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clients
+                                        <span class="caret"></span>
+                                      </a>
+                                    <ul class="dropdown-menu">
+                                          <li>
+                                            <%= link_to 'All Clients', clients_path %>
+                                          </li>
+                                        <li>
+                                            <%= link_to 'New Client', new_client_path %>
+                                        </li>
+                                    </ul>
+                                  </li>
+                                <li>
+                                    <a href="#">Jobs</a>
+                                </li>
+                              </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Create Account
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <%= link_to 'As a Jobseeker', clients_path %>
+                                        </li>
+                                        <li>
+                                            <%= link_to 'As a business', new_client_path %>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Login</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<%= yield %>
+
+<footer class="container-fluid">
+    <div class="row">
+        <div class="footer-social" class="col-md-12"></div>
+    </div>
+
+    <div class="footer-nav" class="row">
+        <div class="col-md-12">
+            <nav>
+                <ul>
+                    <li><%= link_to 'Privacy', candidates_path %>
+                        |</li>
+                    <li><%= link_to 'Terms of Use', new_candidate_path %>
+                        |</li>
+                    <li class="copyright">Copyright &copy; 2016 Flexiforce. All rights reserved.</li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,184 @@
+<%= form_for @candidate do |f| %>
+  <fieldset>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, :required => true%>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :last_name%>
+    <%= f.text_field :last_name, :required => true%>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :dob, 'Date of birth' %>
+    <%= f.text_field :dob, :placeholder => '1970-1-25', :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :email %>
+    <%= f.email_field :email, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :candidate_contact_number %>
+    <%= f.phone_field :candidate_contact_number %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :gender %>
+    <%= f.text_field:gender %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :residency_status %>
+    <%= f.text_field:residency_status %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :residental_address %>
+    <%= f.text_field:residental_address %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :residental_suburb %>
+    <%= f.text_field:residental_suburb %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :residental_state %>
+    <%= f.text_field:residental_state %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :residental_postcode %>
+    <%= f.number_field :residental_postcode %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :postal_address %>
+    <%= f.text_field:postal_address %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :postal_suburb %>
+    <%= f.text_field:postal_suburb %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :postal_state %>
+    <%= f.text_field:postal_state %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :postal_postcode %>
+    <%= f.number_field :postal_postcode %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :introduction %>
+    <%= f.text_field:introduction %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :education %>
+    <%= f.text_field:education %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :profession %>
+    <%= f.text_field:profession%>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :skills %>
+    <%= f.text_field:skills %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :other_skills %>
+    <%= f.text_field:other_skills %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :certificates_licenses %>
+    <%= f.text_field:certificates_licenses %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :job_title %>
+    <%= f.text_field:job_title %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :job_duration %>
+    <%= f.text_field:job_duration %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :company_name %>
+    <%= f.text_field:company_name %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :job_description %>
+    <%= f.text_field:job_description %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :reference_name %>
+    <%= f.text_field:reference_name %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :reference_contact_number %>
+    <%= f.phone_field :reference_contact_number %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :picture %>
+    <%= f.url_field :picture %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :resume %>
+    <%= f.url_field :resume %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :photo_id %>
+    <%= f.url_field :photo_id %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :consent_to_tests %>
+    <%= f.text_field:consent_to_tests %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :travelling_distance %>
+    <%= f.text_field:travelling_distance %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :vehicle_access %>
+    <%= f.text_field:vehicle_access %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :availability %>
+    <%= f.text_field:availability %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :used_marketing_channel %>
+    <%= f.text_field:used_marketing_channel %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :used_agencies %>
+    <%= f.text_field:used_agencies %>
+  </fieldset>
+
+  <%= f.submit %>
+
+<% end %>

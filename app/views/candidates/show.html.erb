@@ -1,0 +1,13 @@
+<h1>Candidats#show</h1>
+<p>Find me in app/views/candidats/show.html.erb</p>
+
+<h1><%= @candidate.last_name %>, <%= @candidate.first_name %></h1>
+<ul>
+  <li><%= @candidate.email %></li>
+</ul>
+
+<div class="controls">
+  <!-- This is morally wrong -->
+  <%= link_to 'Edit', edit_candidate_path(@candidate) %>
+  <%= link_to 'Delete', @candidate, :method => :delete, :data => { :confirm => "Are you sure?" } %>
+</div>
