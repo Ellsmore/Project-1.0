@@ -1,0 +1,60 @@
+<%= form_for @job_ad do |f| %>
+  <fieldset>
+    <%= f.label :title %>
+    <%= f.text_field :title, :required => true%>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :description%>
+    <%= f.text_field :description, :required => true%>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :employment_type %>
+    <%= f.text_field :employment_type, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :address %>
+    <%= f.text_field :address, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :suburb %>
+    <%= f.text_field :suburb, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :state %>
+    <%= f.text_field :state %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :postcode %>
+    <%= f.number_field :postcode %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :skills %>
+    <%= f.text_field :skills %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :liscenses_certificates %>
+    <%= f.text_field :liscenses_certificates %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :drivers_license %>
+    <%= f.text_field :drivers_license %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :transport %>
+    <%= f.text_field :transport %>
+  </fieldset>
+
+
+  <%= f.submit %>
+
+<% end %>

@@ -1,2 +1,19 @@
-<h1>JobAds#show</h1>
-<p>Find me in app/views/job_ads/show.html.erb</p>
+<h1><%= @job_ad.title %></h1>
+
+<ul>
+  <li><%= @job_ad.description %></li>
+  <li><%= @job_ad.employment_type %></li>
+  <li><%= @job_ad.address %></li>
+  <li><%= @job_ad.suburb %></li>
+  <li><%= @job_ad.state %></li>
+  <li><%= @job_ad.postcode %></li>
+  <li><%= @job_ad.skills %></li>
+  <li><%= @job_ad.liscenses_certificates %></li>
+  <li><%= @job_ad.drivers_license %></li>
+  <li><%= @job_ad.transport %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit', edit_job_ad_path(@job_ad) %>
+  <%= link_to 'Delete', @job_ad, :method => :delete, :data => { :confirm => "Are you sure?" } %>
+</div>

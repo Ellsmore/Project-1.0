@@ -10,7 +10,7 @@ class ClientsController < ApplicationController
   end
 
   def create
-    client = Client.create candidate_params
+    client = Client.create client_params
     redirect_to client
   end
 
