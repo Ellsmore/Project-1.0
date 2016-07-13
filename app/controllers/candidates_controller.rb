@@ -1,4 +1,6 @@
 class CandidatesController < ApplicationController
+  before_filter :authorise_user, only:[:new, :create, :edit, :update, :destroy]
+
   def index
     @candidates = Candidate.all
   end

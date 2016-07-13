@@ -1,4 +1,6 @@
 class ClientsController < ApplicationController
+  before_filter :authorise_user, only:[:new, :create, :edit, :update, :destroy]
+
   def index
     @clients = Client.all
   end
@@ -35,5 +37,5 @@ class ClientsController < ApplicationController
   private
   def candidate_params
     params.require(:client).permit(:business_name, :address, :suburb, :state, :postcode, :contact_name, :mobile_number, :phone_number)
-  end 
+  end
 end
