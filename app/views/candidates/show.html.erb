@@ -1,10 +1,20 @@
-<h1 class="non-home-page-title"><%= @candidate.first_name %> <%= @candidate.last_name %></h1>
-<ul>
-  <li><%= @candidate.email %></li>
-</ul>
+<div class="non-home-page-div">
+  <h1 class="non-home-page-title
+  "><%= @candidate.first_name %> <%= @candidate.last_name %></h1>
 
-<div class="controls">
-  <!-- This is morally wrong -->
-  <%= link_to 'Edit', edit_candidate_path(@candidate) %>
-  <%= link_to 'Delete', @candidate, :method => :delete, :data => { :confirm => "Are you sure?" } %>
+      <ul class="non-homepage-text">
+        <li><%= @candidate.email %></li>
+        <li><%= @candidate.dob %></li>
+        <li><%= @candidate.gender %></li>
+        <li><%= @candidate.candidate_contact_number %></li>
+        <li><%= @candidate.residental_address %></li>
+        <li><%= @candidate.residental_suburb %></li>
+        <li><%= @candidate.residental_state %></li>
+        <li><%= @candidate.residental_postcode %></li>
+      </ul>
+
+      <div class="controls">
+        <%= link_to 'Edit', edit_candidate_path(@candidate), :class => "button-one non-home-page-button" %>
+        <%= link_to 'Delete', @candidate, :class => "button-one non-home-page-button", :method => :delete, :data => { :confirm => "Are you sure?" } %>
+      </div>
 </div>

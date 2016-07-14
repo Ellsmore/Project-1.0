@@ -1,16 +1,18 @@
-<h1><%= @client.business_name %></h1>
+<div class="non-home-page-div">
+  <h1 class="non-home-page-title"><%= @client.business_name %></h1>
 
-<ul>
-  <li><%= @client.address %></li>
-  <li><%= @client.suburb %></li>
-  <li><%= @client.state %></li>
-  <li><%= @client.postcode %></li>
-  <li><%= @client.contact_name %></li>
-  <li><%= @client.mobile_number %></li>
-  <li><%= @client.phone_number %></li>
-</ul>
+  <ul class="non-homepage-text">
+    <li><%= @client.address %></li>
+    <li><%= @client.suburb %></li>
+    <li><%= @client.state %></li>
+    <li><%= @client.postcode %></li>
+    <li><%= @client.contact_name %></li>
+    <li><%= @client.mobile_number %></li>
+    <li><%= @client.phone_number %></li>
+  </ul>
 
-<div class="controls">
-  <%= link_to 'Edit', edit_client_path(@client) %>
-  <%= link_to 'Delete', @client, :method => :delete, :data => { :confirm => "Are you sure?" } %>
+  <div class="controls">
+    <%= link_to 'Edit', edit_client_path(@client), :class => "button-one non-home-page-button" %>
+    <%= link_to 'Delete', @client, :class => "button-one non-home-page-button", :method => :delete, :data => { :confirm => "Are you sure?" } %>
+  </div>
 </div>

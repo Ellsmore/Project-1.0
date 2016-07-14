@@ -1,7 +1,9 @@
-<h1>All Job Advertisments</h1>
+<div class="non-home-page-div">
+  <h1 class="non-home-page-title">All Job Advertisments</h1>
 
-<% @job_ads.each do |job_ad| %>
-  <ul>
-    <li><%= link_to job_ad.title, job_ad%></li>
-  </ul>
-<% end %>
+  <% @job_ads.each do |job_ad| %>
+    <ul class="non-homepage-text">
+      <li><%= link_to job_ad.title, job_ad%></li>
+    </ul>
+  <% end %>
+</div>

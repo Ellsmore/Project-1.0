@@ -1,7 +1,9 @@
-<h1>All Applications</h1>
+<div class="non-home-page-div">
+  <h1 class="non-home-page-title">All Applications</h1>
 
-<% @applications.each do |application| %>
-  <ul>
-    <li><%= link_to application.description, application %></li>
-  </ul>
-<% end %>
+  <% @applications.each do |application| %>
+    <ul class="non-homepage-text">
+      <li><%= link_to application.description, application %></li>
+    </ul>
+  <% end %>
+</div>

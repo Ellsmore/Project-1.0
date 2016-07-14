@@ -43,9 +43,52 @@ ul {
 
 .non-homepage-text {
   text-decoration: none;
-  color: red;
+  color: #F34C1C;
   font-size: 2.5em;
   text-align: right;
   font-weight: 400;
+  text-align: center;
+}
 
+.button-one {
+  padding: 20px 50px;
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #F34C1C;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #B44705;
+  position: relative;
+}
+
+.button-one:hover {
+  background-color: #3e8e41;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.button-one:hover {
+  background-color: #F34C1C;
+  box-shadow: 0 5px #B44705;
+  transform: translateY(4px);
+}
+
+.home-page-button {
+  top: 40vh;
+}
+
+.non-home-page-button {
+  top: 10vh;
+}
+
+.non-home-page-div {
+  background-color: #EAEAEA;
+  height: 85vh;
+  background-image: url(http://caohung.xyz/Images/city.png);
+  background-size: 30%;
+  background-repeat: repeat-x;
+  background-position: bottom right;
 }

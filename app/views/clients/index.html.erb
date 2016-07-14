@@ -1,7 +1,9 @@
-<h1>All Clients</h1>
+<div class="non-home-page-div">
+  <h1 class="non-home-page-title">All Clients</h1>
 
-<% @clients.each do |client| %>
-  <ul>
-    <li><%= link_to client.business_name, client%></li>
-  </ul>
-<% end %>
+  <% @clients.each do |client| %>
+    <ul>
+      <li><%= link_to client.business_name, client, :class => "non-homepage-text"%></li>
+    </ul>
+  <% end %>
+</div>

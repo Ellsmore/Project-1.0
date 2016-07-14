@@ -41,29 +41,6 @@ nav li {
     top: 10vh;
   }
 
-  .button-one {
-    padding: 20px 50px;
-    font-size: 50px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #F34C1C;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 9px #B44705;
-    position: relative;
-    top: 40vh;
-  }
-
-  .button-one:hover {background-color: #3e8e41}
-
-  .button-one:hover {
-    background-color: #F34C1C;
-    box-shadow: 0 5px #B44705;
-    transform: translateY(4px);
-  }
-
   .home-selection-three-title {
       font-family: Adelle;
       font-weight: 600;
@@ -191,16 +168,4 @@ footer {
   line-height: 80px;
   color: #c0bdc4;
   text-decoration: none;
-}
-
-//----------------------------------------------------------------------------//
-//Candidates page
-
-.canidates-index {
-  background-color: #EAEAEA;
-  height: 85vh;
-  background-image: url(https://openclipart.org/image/2400px/svg_to_png/218213/office_Executive_vishnuvp.png);
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: bottom right;
 }

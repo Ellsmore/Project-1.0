@@ -1,13 +1,15 @@
-<h1><%= link_to @application.candidate.first_name, @application.candidate if @application.candidate %></h1>
+<div class="non-home-page-div">
+  <h1 class="non-home-page-title"><%= link_to @application.candidate.first_name, @application.candidate if @application.candidate %></h1>
 
-<ul>
-  <li><%= @application.accepted %></li>
-  <li><%= @application.short_list %></li>
-  <li><%= @application.description %></li>
-  <li><%= link_to @application.candidate.first_name, @application.candidate if @application.candidate %></li>
-</ul>
+  <ul class="non-homepage-text">
+    <li><%= @application.accepted %></li>
+    <li><%= @application.short_list %></li>
+    <li><%= @application.description %></li>
+    <li><%= link_to @application.candidate.first_name, @application.candidate if @application.candidate %></li>
+  </ul>
 
-<div class="controls">
-  <%= link_to 'Edit', edit_application_path(@application) %>
-  <%= link_to 'Delete', @application, :method => :delete, :data => { :confirm => "Are you sure?" } %>
+  <div class="controls">
+    <%= link_to 'Edit', edit_application_path(@application), :class => "button-one non-home-page-button" %>
+    <%= link_to 'Delete', @application, :class => "button-one non-home-page-button", :method => :delete, :data => { :confirm => "Are you sure?" } %>
+  </div>
 </div>
