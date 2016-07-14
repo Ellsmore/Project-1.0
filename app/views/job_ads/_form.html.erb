@@ -54,6 +54,11 @@
     <%= f.text_field :transport %>
   </fieldset>
 
+  <fieldset>
+    <%= f.label :name_of_your_business %>
+    <%= f.select :client_id, Client.pluck(:business_name, :id), :include_blank => true %>
+  </fieldset>
+
 
   <%= f.submit %>
 

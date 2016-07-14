@@ -1,0 +1,29 @@
+<%= form_for @application do |f| %>
+  <fieldset>
+    <%= f.label :accepted %>
+    <%= f.select :accepted, [['Yes', true], ['No', false]], :required => true%>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :short_list%>
+    <%= f.text_field :short_list, :required => true%>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :description %>
+    <%= f.text_field :description, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :name_of_candidate %>
+    <%= f.select :candidate_id, Candidate.pluck(:first_name, :id), :include_blank => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :name_of_job %>
+    <%= f.select :job_ad_id, Job_ad.pluck(:title, :id), :include_blank => true %>
+  </fieldset>
+
+  <%= f.submit %>
+
+<% end %>

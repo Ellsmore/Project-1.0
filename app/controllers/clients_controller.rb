@@ -35,7 +35,7 @@ class ClientsController < ApplicationController
   end
 
   private
-  def candidate_params
+  def client_params
     params.require(:client).permit(:business_name, :address, :suburb, :state, :postcode, :contact_name, :mobile_number, :phone_number)
   end
 end

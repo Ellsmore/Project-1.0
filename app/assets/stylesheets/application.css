@@ -18,3 +18,11 @@
 body {
   min-height: 100vh;
 }
+
+footer {
+  bottom: 0;
+}
+
+.center {
+  min-height: 82vh;
+}

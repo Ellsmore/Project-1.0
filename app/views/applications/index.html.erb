@@ -1,2 +1,7 @@
-<h1>Applications#index</h1>
-<p>Find me in app/views/applications/index.html.erb</p>
+<h1>All Applications</h1>
+
+<% @applications.each do |application| %>
+  <ul>
+    <li><%= link_to application.description, application %></li>
+  </ul>
+<% end %>

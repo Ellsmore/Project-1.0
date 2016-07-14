@@ -11,6 +11,7 @@
   <li><%= @job_ad.liscenses_certificates %></li>
   <li><%= @job_ad.drivers_license %></li>
   <li><%= @job_ad.transport %></li>
+  <li><%= link_to @job_ad.client.business_name, @job_ad.client if @job_ad.client %></li>
 </ul>
 
 <div class="controls">

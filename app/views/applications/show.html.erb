@@ -1,2 +1,13 @@
-<h1>Applications#show</h1>
-<p>Find me in app/views/applications/show.html.erb</p>
+<h1><%= link_to @application.candidate.name, @application.candidate if @application.candidate %></h1>
+
+<ul>
+  <li><%= @application.accepted %></li>
+  <li><%= @application.short_list %></li>
+  <li><%= @application.description %></li>
+  <li><%= link_to @application.candidate.first_name, @application.candidate if @application.candidate %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit', edit_application_path(@application) %>
+  <%= link_to 'Delete', @application, :method => :delete, :data => { :confirm => "Are you sure?" } %>
+</div>
