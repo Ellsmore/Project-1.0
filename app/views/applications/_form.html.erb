@@ -5,6 +5,7 @@
 </fieldset>
 
 <fieldset>
+  <%= f.label :short_list %>
   <%= f.text_field :short_list, :required => true%>
 </fieldset>
 
@@ -20,7 +21,7 @@
 
 <fieldset>
   <%= f.label :name_of_job %>
-  <%= f.select :job_ad_id, Job_ad.pluck(:title, :id), :include_blank => true %>
+  <%= f.select :job_ad_id, JobAd.pluck(:title, :id), :include_blank => true %>
 </fieldset>
 
 <%= f.submit %>

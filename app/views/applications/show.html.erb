@@ -6,6 +6,7 @@
     <li><%= @application.short_list %></li>
     <li><%= @application.description %></li>
     <li><%= link_to @application.candidate.first_name, @application.candidate if @application.candidate %></li>
+    <li><%= link_to @application.job_ad.title, @application.job_ad if @application.job_ad %></li>
   </ul>
 
   <div class="controls">
