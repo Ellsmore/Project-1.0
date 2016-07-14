@@ -1,8 +1,13 @@
-<h1>Candidates</h1>
+<div class="canidates-index">
+  <h1 class="non-home-page-title">Candidates</h1>
 
-<% @candidates.each do |candidate| %>
-  <ul>
-    <li><%= link_to candidate.last_name, candidate %>, <%= link_to candidate.first_name, candidate %></li>
-    <li><%= candidate.email %></li>
-  </ul>
-<% end %>
+  <div class="row candidate-images">
+    <div class="col-md-12 candidate-images">
+      <% @candidates.each do |candidate| %>
+        <ul>
+          <li><%= link_to candidate.last_name, candidate, :class => "non-homepage-text" %>, <%= link_to candidate.first_name, candidate, :class => "non-homepage-text"  %></li>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+</div>

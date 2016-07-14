@@ -12,8 +12,7 @@
 header {
   height: 75px;
   background-color: #FFFFFF;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 1.5vh;
+
 }
 
 .navigation {
@@ -26,67 +25,77 @@ nav li {
     display: inline-block;
     text-decoration: none;
     text-align: center;
+    top: 1vh;
 }
 .navigation a {
-  color: black;
-  font-size: 20px;
+  color: #F34C1C;
+  font-weight: 600;
+  font-size: 2.2em;
 }
 
+.home-title {
+    font-family: Adelle;
+    font-weight: 600;
+    font-size: 12em;
+    position: relative;
+    top: 10vh;
+  }
+
+  .button-one {
+    padding: 20px 50px;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #F34C1C;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #B44705;
+    position: relative;
+    top: 40vh;
+  }
+
+  .button-one:hover {background-color: #3e8e41}
+
+  .button-one:hover {
+    background-color: #F34C1C;
+    box-shadow: 0 5px #B44705;
+    transform: translateY(4px);
+  }
+
+  .home-selection-three-title {
+      font-family: Adelle;
+      font-weight: 600;
+      font-size: 9em;
+      position: relative;
+      text-align: center;
+      padding-left: 10vw;
+      padding-right: 10vw;
+      line-height: normal;
+      color: #FFFFFF;
+    }
+
+    .home-text {
+      color: #FFFFFF;
+      position: relative;
+      padding: 5vw;
+      font-size: 2.5em;
+      text-align: left;
+    }
 
 
 //----------------------------------------------------------------------------//
 //Main
-.home-section-one-tabs {
-  height: 6vh;
-  text-align: center;
-  font-size: 3em;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  bottom: 10%;
-}
-
-.home-section-one-tabs .tab-one {
-  color: #F34C1C;
-  background-color: #F3F3F5;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.home-section-one-tabs .tab-two {
-  color: #FFFFFF;
-  background-color: #3BA3C3;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-
 .home-section-one {
   height:80vh;
   background-color: #3BA3C3;
   color: white;
   text-align: center;
-}
-
-.button-one {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #F34C1C;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 9px #B44705;
-}
-
-.button-one:hover {background-color: #3e8e41}
-
-.button-one:hover {
-  background-color: #F34C1C;
-  box-shadow: 0 5px #B44705;
-  transform: translateY(4px);
+  background-image: url(http://gumdiseaseusa.org/wp-content/uploads/2014/10/avatar.png), url(http://poptudors.com/wp-content/uploads/2015/04/avatar.png);
+  background-repeat: no-repeat;
+  background-position: left 20% bottom, right 20% bottom;
+  background-size: 20%, 20%;
 }
 
 .flexeforce-services li {
@@ -114,23 +123,50 @@ nav li {
 }
 
 .home-selection-three {
-  background-color: #FFB736;
+  background-color: rgb(255, 183, 54);
   height:100vh;
+  background-image: url(https://openclipart.org/image/2400px/svg_to_png/218213/office_Executive_vishnuvp.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right 10% bottom 10%;
+  background-size: 50%;
 }
 
 .home-selection-four {
   background-color: #4155B4;
   height:100vh;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/09/da/41/09da41ee73a5df23ff3bd4cf218e00d2.png);
+  background-repeat: no-repeat;
+  background-position: left 10% bottom 35%;
 }
 
 .home-selection-five {
   background-color: #584297;
   height:100vh;
+  background-image: url(http://www.1designshop.com/wp-content/uploads/2015/12/1dsp-20151230-business-002.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right 10% bottom 10%;
 }
 
 .home-selection-six {
   background-color: #FFFDFF;
   height:100vh;
+  background-image: url(http://www.wpclipart.com/space/ships/spaceship_cartoons/rockets_2/rocket_icon_2.svg), url(http://www.socialtalent.co/wp-content/uploads/2016/03/Target.png), url(https://www.webmens.be/sites/all/themes/bootstrap/bootstrap_webmens/images/icons/6-statistieken.png);
+  background-position: left 10% bottom 20%, center bottom 20%, right 10% bottom 20%;
+  background-repeat: no-repeat;
+  background-size: auto, 30%, auto;
+}
+
+.home-section-six-title {
+  font-family: Adelle;
+  font-weight: 900;
+  font-size: 8em;
+  position: relative;
+  text-align: center;
+  padding-top: 5vh;
+  line-height: normal;
+  color: #000000;
 }
 
 //----------------------------------------------------------------------------//
@@ -155,4 +191,16 @@ footer {
   line-height: 80px;
   color: #c0bdc4;
   text-decoration: none;
+}
+
+//----------------------------------------------------------------------------//
+//Candidates page
+
+.canidates-index {
+  background-color: #EAEAEA;
+  height: 85vh;
+  background-image: url(https://openclipart.org/image/2400px/svg_to_png/218213/office_Executive_vishnuvp.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
