@@ -1,4 +1,4 @@
-<h1><%= link_to @application.candidate.name, @application.candidate if @application.candidate %></h1>
+<h1><%= link_to @application.candidate.first_name, @application.candidate if @application.candidate %></h1>
 
 <ul>
   <li><%= @application.accepted %></li>

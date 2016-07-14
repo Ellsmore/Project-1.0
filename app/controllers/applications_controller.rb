@@ -36,6 +36,6 @@ class ApplicationsController < ApplicationController
 
   private
   def application_params
-    params.require(:application).permit(:accepted, :short_list, :description)
+    params.require(:application).permit(:accepted, :short_list, :description, :job_ad_id, :candidate_id)
   end
 end

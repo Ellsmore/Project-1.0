@@ -36,6 +36,6 @@ class JobAdsController < ApplicationController
 
   private
   def job_ad_params
-    params.require(:job_ad).permit(:title, :description, :employment_type, :address, :suburb, :state, :postcode, :skills, :liscenses_certificates, :drivers_license, :transport, :client_id)
+    params.require(:job_ad).permit(:title, :description, :employment_type, :address, :suburb, :state, :postcode, :skills, :liscenses_certificates, :drivers_license, :transport, :client_id, :job_ad_id)
   end
 end

@@ -25,4 +25,9 @@ footer {
 
 .center {
   min-height: 82vh;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
 }

@@ -1,5 +1,5 @@
 class Job_ad < ActiveRecord::Base
-  has_many :applications
+  belongs_to :applications
   has_many :candidates, :through => :applications
   belongs_to :client
 end
