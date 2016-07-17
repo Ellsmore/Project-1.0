@@ -1,28 +1,34 @@
-== README
+#Recruitment App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Duration:
 
-Things you may want to cover:
+7 days
 
-* Ruby version
+##Tech Stack:
+- HTML
+- CSS
+- JavaScript
+- Ruby
+- Rails
+- Heroku
 
-* System dependencies
+##Features:
+- Browse the site as a guest.
+- Users can create, edit and delete accounts.
+- Users can login.
+- Logged in users can post, edit and delete candidate and client - profiles, job ads and applications.
 
-* Configuration
+##Nice to have:
+Below are features I would like to implement in the future:
 
-* Database creation
+- Responsive design.
+- Nested routes for users.
+- Reviews component
+- Ability to collect more data which is relevant to labour hire and recruitment.
+- Email confirmation for new accounts.
+- Contact page.
 
-* Database initialization
+#Link:
+[Recruitment Application](https://flexiforce-database.herokuapp.com/)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Thank you for stopping by!
